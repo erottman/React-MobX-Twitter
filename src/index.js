@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Counter from './Counter';
 import App from './App';
-import './index.css';
+
+const config = {
+  databaseURL: 'https://twitter-copy-eeb7f.firebaseio.com',
+}
 
 ReactDOM.render(
-  <App counter={new Counter()} />,
+  <App config={config} />
   document.getElementById('root')
 );
